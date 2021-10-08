@@ -1,5 +1,14 @@
-# gollum-wiki-oauth
-Gollum wiki with Nginx and OAuth
+# Gollum Wiki OAuth
+
+We want to give our employees — all GSuite users but not Github users — access to a GitHub style wiki.
+Within Gollum, all commits can be from the sinlge user, but we intend to set the git name and email per commit (from OAuth). 
+
+We'd like to eventually have an automated setup were possible and maybe even create a 
+[stateless container image](https://github.com/gollum/gollum/issues/1767)
+Installing `Nginx`, `Let's Encrypt ` and `Gollum` are straight forward,
+but setting up the OAuth proxy is a bit tricky.
+
+## The files
 
 This repo contains the files for Gollum Wiki:
 
