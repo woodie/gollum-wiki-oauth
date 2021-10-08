@@ -36,3 +36,5 @@ We don't need to authorize, just authenticate. We can use an
 [NGINX OAuth Proxy](https://dev.to/ahmedmusaad/add-google-authentication-to-any-website-using-nginx-and-oauth-proxy-259l).
 Use [let's encrypt](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-debian-10)
 with  `certbot` to generate keys, then configure [oauth2_proxy](https://github.com/bitly/oauth2_proxy).
+
+![](http://yuml.me/diagram/scruffy/class/[note:Google%20Cloud%20Platform\nGSuite%20Authentication{bg:yellow}],[Employees%20{bg:wheat}]->[GCP%20Identity\nAware%20Proxy]->[Minimal;Gollum{bg:green}],[Employees%20{bg:wheat}]->[Full%20STack;OAuth%20proxy;LetsEncrypt;Nginx;Gollum{bg:green}])
