@@ -23,6 +23,9 @@ This repo contains the files for Gollum Wiki:
 - Nginx general configuration:<br>
   /etc/nginx/nginx.conf
 
+- OAuth Proxy Config<br>
+  /opt/oauth2_proxy/oauth2_proxy.cfg
+
 ### Background
 
 Getting all the dependencies installed can be a pain, but `apt install ruby-gollum-lib` takes care of that on Debian.
