@@ -20,9 +20,6 @@ This repo contains the files for Gollum Wiki:
 - Systemd service file for Gollum:<br>
   /etc/systemd/system/gollum.service
 
-- Nginx general configuration:<br>
-  /etc/nginx/nginx.conf
-
 - OAuth Proxy Config<br>
   /opt/oauth2_proxy/oauth2_proxy.cfg
 
