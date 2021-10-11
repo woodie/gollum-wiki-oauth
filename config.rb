@@ -13,6 +13,7 @@ examples:
 
 # Define the wiki options
 wiki_options = {
+  :universal_toc => true,
   :h1_title => true,
   :user_icons => 'gravatar',
   :live_preview => false,
@@ -31,8 +32,8 @@ Precious::App.set(:wiki_options, wiki_options)
 
 module OverrideMyPrecious
   def commit_message
-    name = request.env['HTTP_REMOTE_NAME']
-    email = request.env['HTTP_REMOTE_EMAIL']
+    name = request.env['HTTP_REMOTE_NAME']   # Note: these request vars
+    email = request.env['HTTP_REMOTE_EMAIL'] # are not currently being set
 
     msg = (params[:message].nil? or params[:message].empty?) ? "[no message]" : params[:message]
 
