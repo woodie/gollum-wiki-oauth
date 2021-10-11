@@ -28,3 +28,22 @@ wiki_options = {
 
 # Send the wiki options to the Gollum app
 Precious::App.set(:wiki_options, wiki_options)
+
+module OverrideMyPrecious
+  def commit_message
+    name = request.env['HTTP_REMOTE_NAME']
+    email = request.env['HTTP_REMOTE_EMAIL']
+
+    msg = (params[:message].nil? or params[:message].empty?) ? "[no message]" : params[:message]
+
+    commit_message = {
+      message: msg,
+      name: name,
+      email: email
+    }
+
+    commit_message
+  end
+
+  Precious::App.prepend self
+end
