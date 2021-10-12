@@ -8,7 +8,7 @@ Type=simple
 User=gollum
 Group=gollum
 WorkingDirectory=/home/gollum/wiki/
-ExecStart=/usr/local/bin/gollum --config "/etc/gollum/config.rb"
+ExecStart=/usr/local/bin/gollum --ref "wiki" --config "/etc/gollum/config.rb"
 Restart=on-abort
 
 [Install]
