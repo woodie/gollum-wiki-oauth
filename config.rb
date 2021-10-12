@@ -32,9 +32,8 @@ Precious::App.set(:wiki_options, wiki_options)
 
 module OverrideMyPrecious
   def commit_message
-    name = request.env['HTTP_REMOTE_NAME']   # Note: these request vars
-    email = request.env['HTTP_REMOTE_EMAIL'] # are not currently being set
-
+    email = request.get_header('HTTP_X_EMAIL') || request.env['X-Email'] || 'nobody@netpress.com'
+    name = email.tosplit('@').first
     msg = (params[:message].nil? or params[:message].empty?) ? "[no message]" : params[:message]
 
     commit_message = {
