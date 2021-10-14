@@ -5,7 +5,8 @@ Within Gollum, all commits are made by the git use (from OAuth).
 We'd like to eventually have an automated setup when possible and maybe even create a 
 [stateless container image](https://github.com/gollum/gollum/issues/1767)
 Installing `Nginx`, `Let's Encrypt ` and `Gollum` are straight forward,
-but setting up the OAuth proxy is a bit tricky.
+but setting up the OAuth proxy was a bit tricky. Special thanks to our new friends
+for helping out with this.
 
 ### The files
 
