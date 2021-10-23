@@ -1,6 +1,7 @@
 # Define the wiki options
 wiki_options = {
   # universal_toc: true,
+  index_page: "Netpress%20Wiki",
   h1_title: true,
   user_icons: "gravatar",
   live_preview: false,
