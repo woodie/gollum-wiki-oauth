@@ -34,6 +34,12 @@ to get it installed as a service with NGINX in front (so we can install other se
 by setting up the wiki in the home dir of use gollum, and we run the web stack as that user as well.
 Only NGINX needs to run as root (as it listens on port 80).
 
+When setting up `Client ID for Web application` within `OAuth Client Credentials` on GCP,
+it's critical to setup the following `Authorized redirect URI`
+```
+https://wiki.netpress.com/oauth2/callback
+```
+
 We don't need to authorize, just authenticate. We can use an
 [NGINX OAuth Proxy](https://dev.to/ahmedmusaad/add-google-authentication-to-any-website-using-nginx-and-oauth-proxy-259l).
 Use [let's encrypt](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-debian-10)
