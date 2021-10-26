@@ -19,19 +19,19 @@ This would not have been possible without the excellent Gollum setup guide from
 
 This repo contains the files for Gollum Wiki:
 
-- Configuration for Gollum (installed at /etc/gollum/config.rb).
+- Configuration for Gollum (installed at /etc/gollum/config.rb).<br>
   We added a module to to set the commit message (name and email) from the headers passed back from Nginx.
 
-- Nginx configuration for Gollum (installed at /etc/nginx/conf.d/gollum.conf).
+- Nginx configuration for Gollum (installed at /etc/nginx/conf.d/gollum.conf).<br>
   We set a favicon, configure the `/oauth` path for oauth2_proxy, and set the `X-Email` and `X-Access-Token` headers.
   
-- OAuth Proxy Config (installed at /opt/oauth2_proxy/oauth2_proxy.cfg).
+- OAuth Proxy Config (installed at /opt/oauth2_proxy/oauth2_proxy.cfg).<br>
   We set pass_user_headers, pass_access_token, set_xauthrequest all to true se we can access the user's email address.
 
-- Gollum Systemd Services (installed at /etc/systemd/system/gollum.service). 
+- Gollum Systemd Services (installed at /etc/systemd/system/gollum.service).<br>
   We set the `ref` flag to `wiki` so the Overview page says `Overview of wiki` instead of `Overview of master`.
 
-- Oauth2 Proxy Systemd Services (installed at /etc/systemd/system/oauth_proxy.service).
+- Oauth2 Proxy Systemd Services (installed at /etc/systemd/system/oauth_proxy.service).<br>
   This is a standard configurtion from the guide we used.
 
 ## Server setup
