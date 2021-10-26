@@ -20,7 +20,7 @@ This repo contains the files for Gollum Wiki:
 - Nginx configuration for Gollum (installed at /etc/nginx/conf.d/[gollum.conf](https://github.com/woodie/gollum-wiki-oauth/blob/main/gollum.conf)).<br>
   We set a favicon, configure the `/oauth` path for oauth2_proxy, and set the `X-Email` and `X-Access-Token` headers.
   
-- OAuth Proxy Config (installed at /opt/oauth2_proxy/[oauth2_proxy.cfg](https://github.com/woodie/gollum-wiki-oauth/blob/main/oauth2_proxy/gollum.service)).<br>
+- OAuth Proxy Config (installed at /opt/oauth2_proxy/[oauth2_proxy.cfg](https://github.com/woodie/gollum-wiki-oauth/blob/main/oauth2_proxy/main/oauth2_proxy.cfg)).<br>
   We set pass_user_headers, pass_access_token, set_xauthrequest all to true se we can access the user's email address.
 
 - Gollum Systemd Services (installed at /etc/systemd/system/[gollum.service](https://github.com/woodie/gollum-wiki-oauth/blob/main/systemd/gollum.service)).<br>
