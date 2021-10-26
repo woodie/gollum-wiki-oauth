@@ -3,15 +3,10 @@
 We want to give our employees — all GSuite users but not Github users — access to a GitHub style wiki.
 Within Gollum, all commits can be made by the git user (from OAuth).
 
-We'd like to eventually have an automated setup when possible and maybe even create a 
-[stateless container image](https://github.com/gollum/gollum/issues/1767)
-Installing `Nginx`, `Let's Encrypt ` and `Gollum` are straight forward,
-but setting up the OAuth proxy was a bit tricky. Special thanks to our new friends
-for helping out with this.
-
 ## Special thanks
 
-This would not have been possible without the excellent Gollum setup guide from
+Installing `Nginx`, `Let's Encrypt ` and `Gollum` are straight forward, but setting up the `OAuth2 Proxy`
+was a bit tricky. Getting this working together would not have been possible without the excellent Gollum setup guide from
 [Hitesh Jethva](https://www.linkedin.com/in/hitesh-jethva/) and some OAuth advise and assistance from
 [Ahmed Musaad](https://www.linkedin.com/in/ahmedmusaad/).
 
