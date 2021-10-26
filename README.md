@@ -9,7 +9,13 @@ Installing `Nginx`, `Let's Encrypt ` and `Gollum` are straight forward,
 but setting up the OAuth proxy was a bit tricky. Special thanks to our new friends
 for helping out with this.
 
-### The files
+## Special thanks
+
+I would not have gotten this all working without the excellent Gollum setup guide from
+[Hitesh Jethva](https://www.linkedin.com/in/hitesh-jethva/) and some OAuth advise and assistance from
+[Ahmed Musaad](https://www.linkedin.com/in/ahmedmusaad/).
+
+## Required files
 
 This repo contains the files for Gollum Wiki:
 
@@ -26,7 +32,7 @@ This repo contains the files for Gollum Wiki:
   /etc/systemd/system/gollum.service<br>
   /etc/systemd/system/oauth_proxy.service
 
-### Background
+## Server setup
 
 Getting all the dependencies installed can be a pain, but `apt install ruby-gollum-lib` takes care of that on Debian.
 We followed [this guide](https://www.atlantic.net/vps-hosting/how-to-setup-a-github-style-wiki-using-gollum-on-debian-10/)
