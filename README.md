@@ -38,7 +38,7 @@ by setting up the wiki in the home dir of use gollum, and we run the web stack a
 Only NGINX needs to run as root (as it listens on port 80). We also renamed the main branch `wiki`.
 
 When setting up `Client ID for Web application` within `OAuth Client Credentials` on GCP,
-it's critical to setup the following `Authorized redirect URI`
+it's critical to setup the `Authorized redirect URI` (with your domain name).
 ```
 https://wiki.netpress.com/oauth2/callback
 ```
